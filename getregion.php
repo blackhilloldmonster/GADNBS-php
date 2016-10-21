@@ -106,7 +106,7 @@ function exData($arr)
     return $newArr;
 }
 
-//获取县一下乡镇
+//获取乡镇
 function getContent($target_url)
 {
     $target_content = file_get_contents($target_url);
@@ -146,6 +146,7 @@ function micro_time_float()
 
     return (float) $usec + (float) $sec;
 }
+
 echo "\n 开始处理数据";
 $arr = getFirstData($target);
 $arr = exData(lisToArr($arr));
